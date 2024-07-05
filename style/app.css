@@ -1,0 +1,103 @@
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0%;
+}
+body {
+    height: 100vh;
+    font-family: "Paprika";
+    background-color: #071009;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input , button {
+    font-family: inherit;
+    outline: none;
+    border: none;
+}
+.container {
+    width: 400px;
+    position: relative;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+} 
+.circle_one {
+    background: linear-gradient(rgb(62, 248, 37) ,rgb(141, 206, 128) );
+    top: -80px;
+    right: -80px;
+}
+.circle_two {
+    background: linear-gradient(rgb(230, 120, 93), rgb(202, 128, 68));
+    bottom: -80px;
+    left: -80px;
+}
+.my_form {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.13);
+    padding: 50px 35px 35px 35px;
+    border: 2px solid  rgba(255,255,255,0.13);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(12px);
+}
+.my_form_title{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.my_form_text {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.my_form_text:hover + .my_form_holder{
+    opacity: 0.70;
+}
+.my_form_holder{
+    background-color: rgba(255,255,255,0.07);
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 2px solid  rgba(255,255,255,0.13);
+    color: #fff;
+    transition: all 300ms ease-in;
+}
+.my_form_check {
+    color: #fff;
+    font-size: 12px;
+}
+.my_form_Login{
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background: linear-gradient(to right, #fff,#3e463f);
+    border-radius: 5px;
+    padding: 15px 0;
+    display: block;
+    margin: 20px 0px 30px 0px;
+    opacity: 0.7;
+    transition: all 300ms ease-in;
+} 
+.my_form_Login:hover {
+    cursor: grab;
+    opacity: 0.9;
+}
+
+
+
+

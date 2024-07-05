@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container"> 
+
+        <div class="circle circle_one"></div>
+        <div class="circle circle_two"></div>
+        <form class="my_form" action="#">
+            <h3 class="my_form_title">Login Form</h3>
+            <div>
+                <label class="my_form_text" for="user_name">Username</label>
+                <input class="my_form_holder" type="email" id="user_name" placeholder="email_adress" required autofocus>
+            </div>
+            <div>
+                <label class="my_form_text" for="password">Password</label>
+                <input class="my_form_holder" type="password" id="password" placeholder="password" required minlength="6">
+    
+            </div>
+            
+            <input type="checkbox" id="agree" required>
+            <label class="my_form_check"  for="agree">I am agree</label>
+
+            <button class="my_form_Login" type="su">Log In</button>
+           
+        </form>
+       
+    </div>
+    
+</body>
+</html>
